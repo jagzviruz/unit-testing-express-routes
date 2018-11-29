@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --exit --require ./tests/helpers/globals.js --require ./tests/helpers/interceptors.js --require @babel/register tests/*.tests.js"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +25,7 @@
     "@babel/preset-env": "^7.1.6",
     "@babel/register": "^7.0.0",
     "babel-plugin-dynamic-import-node": "^2.2.0",
-    "nodemon": "^1.18.7"
+    "nodemon": "^1.18.7",
+    "supertest": "^3.3.0"
   }
 }
