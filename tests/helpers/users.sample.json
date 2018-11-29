@@ -1,6 +1,5 @@
-const data = {
-  "users": [
-    {
+{
+  "users": [{
       "_id": "5bff8180689ff44e6850995c",
       "index": 0,
       "guid": "4e0911fe-f89c-49e5-b97a-e5bbf5e49f8f",
@@ -40,8 +39,7 @@ const data = {
         8,
         9
       ],
-      "friends": [
-        {
+      "friends": [{
           "id": 0,
           "name": "Ava Mclaughlin"
         },
@@ -97,8 +95,7 @@ const data = {
         8,
         9
       ],
-      "friends": [
-        {
+      "friends": [{
           "id": 0,
           "name": "Elsa Sanchez"
         },
@@ -154,8 +151,7 @@ const data = {
         8,
         9
       ],
-      "friends": [
-        {
+      "friends": [{
           "id": 0,
           "name": "Carroll Beck"
         },
@@ -211,8 +207,7 @@ const data = {
         8,
         9
       ],
-      "friends": [
-        {
+      "friends": [{
           "id": 0,
           "name": "Suarez Castillo"
         },
@@ -268,8 +263,7 @@ const data = {
         8,
         9
       ],
-      "friends": [
-        {
+      "friends": [{
           "id": 0,
           "name": "Kristin Obrien"
         },
@@ -325,8 +319,7 @@ const data = {
         8,
         9
       ],
-      "friends": [
-        {
+      "friends": [{
           "id": 0,
           "name": "Moses Winters"
         },
@@ -343,14 +336,4 @@ const data = {
       "favoriteFruit": "strawberry"
     }
   ]
-};
-// export const listUsers = (req, res) => res.send(data);
-export const listUsers = (req, res) => slowFunction().then(results => res.send(results));
-
-const slowFunction = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(data);
-    }, 1000)
-  })
 }
