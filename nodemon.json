@@ -1,0 +1,21 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules",
+    "test/fixtures/",
+    "test/samples/"
+  ],
+  "verbose": false,
+  "execMap": {
+    "js": "babel-node"
+  },
+
+  "watch": [
+    "src/**/*"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js,json"
+}
